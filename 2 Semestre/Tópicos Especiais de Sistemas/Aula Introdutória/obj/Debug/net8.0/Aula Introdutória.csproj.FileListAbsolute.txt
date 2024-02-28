@@ -1,0 +1,14 @@
+/Users/kelvinrodrigues/Documents/UP/up-ads/2 Semestre/Tópicos Especiais de Sistemas/Aula Introdutória/bin/Debug/net8.0/Aula Introdutória
+/Users/kelvinrodrigues/Documents/UP/up-ads/2 Semestre/Tópicos Especiais de Sistemas/Aula Introdutória/bin/Debug/net8.0/Aula Introdutória.deps.json
+/Users/kelvinrodrigues/Documents/UP/up-ads/2 Semestre/Tópicos Especiais de Sistemas/Aula Introdutória/bin/Debug/net8.0/Aula Introdutória.runtimeconfig.json
+/Users/kelvinrodrigues/Documents/UP/up-ads/2 Semestre/Tópicos Especiais de Sistemas/Aula Introdutória/bin/Debug/net8.0/Aula Introdutória.dll
+/Users/kelvinrodrigues/Documents/UP/up-ads/2 Semestre/Tópicos Especiais de Sistemas/Aula Introdutória/bin/Debug/net8.0/Aula Introdutória.pdb
+/Users/kelvinrodrigues/Documents/UP/up-ads/2 Semestre/Tópicos Especiais de Sistemas/Aula Introdutória/obj/Debug/net8.0/Aula Introdutória.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kelvinrodrigues/Documents/UP/up-ads/2 Semestre/Tópicos Especiais de Sistemas/Aula Introdutória/obj/Debug/net8.0/Aula Introdutória.AssemblyInfoInputs.cache
+/Users/kelvinrodrigues/Documents/UP/up-ads/2 Semestre/Tópicos Especiais de Sistemas/Aula Introdutória/obj/Debug/net8.0/Aula Introdutória.AssemblyInfo.cs
+/Users/kelvinrodrigues/Documents/UP/up-ads/2 Semestre/Tópicos Especiais de Sistemas/Aula Introdutória/obj/Debug/net8.0/Aula Introdutória.csproj.CoreCompileInputs.cache
+/Users/kelvinrodrigues/Documents/UP/up-ads/2 Semestre/Tópicos Especiais de Sistemas/Aula Introdutória/obj/Debug/net8.0/Aula Introdutória.dll
+/Users/kelvinrodrigues/Documents/UP/up-ads/2 Semestre/Tópicos Especiais de Sistemas/Aula Introdutória/obj/Debug/net8.0/refint/Aula Introdutória.dll
+/Users/kelvinrodrigues/Documents/UP/up-ads/2 Semestre/Tópicos Especiais de Sistemas/Aula Introdutória/obj/Debug/net8.0/Aula Introdutória.pdb
+/Users/kelvinrodrigues/Documents/UP/up-ads/2 Semestre/Tópicos Especiais de Sistemas/Aula Introdutória/obj/Debug/net8.0/Aula Introdutória.genruntimeconfig.cache
+/Users/kelvinrodrigues/Documents/UP/up-ads/2 Semestre/Tópicos Especiais de Sistemas/Aula Introdutória/obj/Debug/net8.0/ref/Aula Introdutória.dll
