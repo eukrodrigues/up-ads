@@ -6,6 +6,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+//Configuração de CORs
+builder.Services.AddCors();
+
 builder.Services.Configure<Microsoft.AspNetCore.Http.Json.JsonOptions>(
     options => options.SerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles
 );
@@ -13,6 +16,12 @@ builder.Services.Configure<Microsoft.AspNetCore.Http.Json.JsonOptions>(
 builder.Services.AddDbContext<BancoDeDados>();
 
 var app = builder.Build();
+
+app.UseCors(builder => builder
+  .AllowAnyOrigin()
+  .AllowAnyHeader()
+  .AllowAnyMethod()
+);
 
 app.UseSwagger();
 app.UseSwaggerUI();

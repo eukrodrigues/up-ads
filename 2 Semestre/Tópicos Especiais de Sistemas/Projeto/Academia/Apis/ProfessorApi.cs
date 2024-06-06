@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore;
 public static class ProfessorApi
 {
     public static void MapProfessorApi(this WebApplication app){
-        var group = app.MapGroup("/Professor");
+        var group = app.MapGroup("/professor");
 
         group.MapGet("/", async(BancoDeDados db) => {
             return await db.Professores.ToListAsync();
@@ -12,7 +12,7 @@ public static class ProfessorApi
             db.Professores.Add(Professor);
             await db.SaveChangesAsync();
 
-            return Results.Created($"/Professor/{Professor.Id}", Professor);
+            return Results.Created($"/professor/{Professor.Id}", Professor);
         });
 
         group.MapPut("/{id}", async(int Id, Professor ProfessorAlterado, BancoDeDados db) => {
