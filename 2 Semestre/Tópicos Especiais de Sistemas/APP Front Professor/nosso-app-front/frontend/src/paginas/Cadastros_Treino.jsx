@@ -15,19 +15,19 @@ function Cadastro() {
 
     function handleSalvarAluno(e) {
         e.preventDefault();
-        axios.post("http://localhost:5229/aluno", aluno)
+        axios.post("http://localhost:5193/aluno", aluno)
             .then(() => setAluno({ nome: "", datanascimento: "" }));
     }
 
     function handleSalvarProfessor(e) {
         e.preventDefault();
-        axios.post("http://localhost:5229/professor", professor)
+        axios.post("http://localhost:5193/professor", professor)
             .then(() => setProfessor({ nome: "", especialidade: "" }));
     }
 
     function handleSalvarTreino(e) {
         e.preventDefault();
-        axios.post("http://localhost:5229/treino", treino)
+        axios.post("http://localhost:5193/treino", treino)
             .then(() => setTreino({ alunoId: "", dia: "", exercicio: "" }));
     }
 

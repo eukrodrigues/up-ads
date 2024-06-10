@@ -11,14 +11,14 @@ function VisualizarAlunosETreinos() {
     }, []);
 
     function getAlunos() {
-        axios.get("http://localhost:5229/aluno")
+        axios.get("http://localhost:5193/aluno")
             .then((resposta) => {
                 setAlunos(resposta.data);
             });
     }
 
     function getTreinos(alunoId) {
-        axios.get(`http://localhost:5229/treino/aluno/${alunoId}`)
+        axios.get(`http://localhost:5193/treino/aluno/${alunoId}`)
             .then((resposta) => {
                 setTreinos(resposta.data);
             });
@@ -32,9 +32,9 @@ function VisualizarAlunosETreinos() {
     function getLinhasDaTabelaAlunos() {
         return alunos.map(aluno => (
             <tr key={aluno._id}>
-                <td>{aluno._id}</td>
+                <td>{aluno.id}</td>
                 <td>{aluno.nome}</td>
-                <td>{aluno.datanascimento}</td>
+                <td>{aluno.dataNascimento}</td>
                 <td>
                     <button onClick={() => handleVerTreinos(aluno._id)}>Ver Treinos</button>
                 </td>
@@ -88,4 +88,4 @@ function VisualizarAlunosETreinos() {
     );
 }
 
-export default Aluno;
+export default VisualizarAlunosETreinos;
