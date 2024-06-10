@@ -1,4 +1,4 @@
-
+/*
 import axios from "axios";
 import { useState, useEffect } from "react";
 
@@ -177,4 +177,4 @@ function Cadastros(){
     // );
 }
 
-export default Cadastros;
+export default Cadastros;*/
