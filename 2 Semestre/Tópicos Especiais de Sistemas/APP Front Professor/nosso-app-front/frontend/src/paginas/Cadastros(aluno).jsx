@@ -31,12 +31,12 @@ function VisualizarAlunosETreinos() {
 
     function getLinhasDaTabelaAlunos() {
         return alunos.map(aluno => (
-            <tr key={aluno._id}>
+            <tr key={aluno.id}>
                 <td>{aluno.id}</td>
                 <td>{aluno.nome}</td>
                 <td>{aluno.dataNascimento}</td>
                 <td>
-                    <button onClick={() => handleVerTreinos(aluno._id)}>Ver Treinos</button>
+                    <button onClick={() => handleVerTreinos(aluno.id)}>Ver Treinos</button>
                 </td>
             </tr>
         ));
