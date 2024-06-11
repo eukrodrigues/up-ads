@@ -9,6 +9,10 @@ public static class AlunoApi
             return await db.Alunos.ToListAsync();
         });
 
+        group.MapGet("/{id}", async(int Id, BancoDeDados db) => {
+            return await db.Alunos.FindAsync(Id);
+        });
+
         group.MapPost("/", async(Aluno Aluno, BancoDeDados db) => {
             db.Alunos.Add(Aluno);
             await db.SaveChangesAsync();
