@@ -15,6 +15,16 @@ public static class TreinoApi
                                 .ToListAsync();
         });
 
+        group.MapGet("/aluno/{id}", async(int Id, BancoDeDados db) => {
+            return await db.Treinos
+                .Where(t => t.Aluno.Id == Id)
+                .Include(t => t.ExercicioTreino)
+                    .ThenInclude(et => et.Exercicio)
+                .Include(t => t.Aluno)
+                .Include(t => t.Professor)
+                .ToListAsync();
+        });
+
         group.MapPost("/", async(Treino Treino, BancoDeDados db) => {
             Treino.ExercicioTreino = await tratarExercicioTreino(Treino, db);
             Treino.Aluno = await tratarAluno(Treino, db);
