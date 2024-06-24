@@ -35,6 +35,7 @@ public class Aplicativo {
             System.out.println("3 | Criar Treino ");
             System.out.println("4 | Pagar Mensalidade ");
             System.out.println("5 | Criar Exercicio ");
+            System.out.println("6 | Visualizar Treino");
             System.out.println("------------------------------------");
 
             opcao = scan.nextInt();
@@ -55,6 +56,9 @@ public class Aplicativo {
                     break;
                 case 5:
                     criarExercicio(scan);
+                    break;
+                case 6:
+                    visualizarTreino(scan);
                     break;
                 default:
                     System.out.println("Opção Inválida!");
@@ -126,7 +130,8 @@ public class Aplicativo {
             codigoProfessor = scan.nextLine();
             treino = new Treino(professores.getProfessor(codigoProfessor), new Date(), 30);
 
-            do {
+            do {   
+                System.out.println("Exercícios: ");
                 exercicios.exibirExercicios();
                 System.out.println("Digite o número do exercício ou -1 para encerrar");
                 idExercicio = scan.nextInt();
@@ -157,11 +162,15 @@ public class Aplicativo {
     private void pagarMensalidade(Scanner scan){
         String matricula;
 
-        System.out.println("Digite a matricula do aluno o qual o treino será associado: ");
-        matricula = scan.nextLine();
+        try{
+            System.out.println("Digite a matricula do aluno o qual o treino será associado: ");
+            matricula = scan.nextLine();
 
-        alunos.pagarMensalidade(matricula);
-        System.out.println("Mensalidade paga com sucesso!");
+            alunos.pagarMensalidade(matricula);
+            System.out.println("Mensalidade paga com sucesso!");
+        } catch(AlunoNaoEncontradoException e){
+            System.out.println(e.getMessage());
+        }
     }
 
     private void criarExercicio(Scanner scan){
